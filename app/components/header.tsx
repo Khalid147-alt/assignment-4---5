@@ -10,7 +10,7 @@ export default function header(){
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/responsive">Media Query Example</Link>
+                        <Link href="responsive">Media Query Example</Link>
                     </li>
                     <li>
                         <Link href="responsive-2">Tailwind Example</Link>

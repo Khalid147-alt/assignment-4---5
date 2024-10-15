@@ -16,32 +16,32 @@ const blogPosts: BlogPost[] = [
   {
     title: "The F-22 Raptor: Stealth Superiority",
     description: "Exploring the capabilities of America's premier air superiority fighter.",
-    image: "/images/f22-raptor.jpg"
+    image: "/andrew-palmer-iUXbIGj1J1s-unsplash.jpg"
   },
   {
     title: "Eurofighter Typhoon: Europe's Guardian",
     description: "A deep dive into the multinational Eurofighter project.",
-    image: "/images/eurofighter-typhoon.jpg"
+    image: "/cibi-chakravarthi-LJOxm6ILgwg-unsplash.jpg"
   },
   {
     title: "Su-57 Felon: Russia's 5th Generation Fighter",
     description: "Analyzing the features of Russia's most advanced fighter jet.",
-    image: "/images/su-57-felon.jpg"
+    image: "/tom-photography-CPWOxjOwWUk-unsplash.jpg"
   },
   {
     title: "F-35 Lightning II: The Versatile Warrior",
     description: "Understanding the multi-role capabilities of the F-35.",
-    image: "/images/f35-lightning.jpg"
+    image: "/timothy-holmes-DXIpirwgP2Q-unsplash.jpg"
   },
   {
     title: "Rafale: France's Multirole Marvel",
     description: "Examining the Dassault Rafale's performance in various missions.",
-    image: "/images/rafale.jpg"
+    image: "/daniel-shapiro-12uNHfvIXms-unsplash.jpg"
   },
   {
     title: "J-20: China's Stealth Fighter",
     description: "Unveiling the mysteries of China's Chengdu J-20.",
-    image: "/images/j20.jpg"
+    image: "/tom-photography-QCbIzsYZSaQ-unsplash.jpg"
   }
 ];
 
@@ -58,16 +58,16 @@ const MainPage: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4">
-      <header className="py-6">
-        <nav className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold">Khalid Hussain</Link>
+      {/* <header className="py-6">
+        <nav className="flex justify-center items-center">
+          <Link href="/" className="text-xl font-bold ">Khalid Hussain</Link>
           <div className="space-x-4">
             <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link>
             <Link href="/about" className="hover:text-blue-500 transition-colors">About</Link>
             <Link href="/contact" className="hover:text-blue-500 transition-colors">Contact</Link>
           </div>
         </nav>
-      </header>
+      </header> */}
 
       <main>
         <motion.div 
@@ -95,7 +95,7 @@ const MainPage: React.FC = () => {
             {['Next.js', 'React', 'TypeScript', 'Web 3.0', 'AI'].map((skill, index) => (
               <motion.div
                 key={skill}
-                className="bg-gray-100 p-2 rounded text-center"
+                className="bg-blue-500 p-2 rounded text-center"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -106,7 +106,7 @@ const MainPage: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <motion.div
-              className="bg-white p-4 rounded shadow"
+              className="bg-green-900 p-4 rounded shadow"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -114,7 +114,7 @@ const MainPage: React.FC = () => {
               <p>AI based services provider</p>
             </motion.div>
             <motion.div
-              className="bg-white p-4 rounded shadow"
+              className="bg-green-900 p-4 rounded shadow"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -130,7 +130,7 @@ const MainPage: React.FC = () => {
             {blogPosts.map((post, index) => (
               <motion.div
                 key={post.title}
-                className="bg-white rounded-lg shadow overflow-hidden"
+                className="bg-purple-600 rounded-black-900 shadow overflow-hidden"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -143,7 +143,7 @@ const MainPage: React.FC = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="font-bold text-lg mb-2">{post.title}</h3>
+                  <h3 className="font-bold text-black-900 mb-2">{post.title}</h3>
                   <p className="text-gray-600">{post.description}</p>
                 </div>
               </motion.div>
