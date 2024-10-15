@@ -52,7 +52,7 @@ const MediaQueryExamples = () => {
         {activeQuery === 'example3' && (
           <div className="description">
             <p>
-              This query checks for the device's orientation. If it's in landscape mode, apply the styles.
+              This query checks for the device&apos;s orientation. If it&apos;s in landscape mode, apply the styles.
             </p>
             <code>
               {`@media (orientation: landscape) {
@@ -74,7 +74,7 @@ const MediaQueryExamples = () => {
           transition: transform 0.3s ease;
         }
         .example:hover {
-          transform: scale(0.5);
+          transform: scale(1.05);
         }
         .description {
           background: blue;
